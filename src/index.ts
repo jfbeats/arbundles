@@ -5,8 +5,6 @@ import { deepHash } from "./deepHash";
 import { DataItemCreateOptions } from "./ar-data-base";
 import { createData } from "./ar-data-create";
 import { ArweaveSigner } from "./signing";
-import SolanaSigner from "./signing/chains/SolanaSigner";
-import EthereumSigner from "./signing/chains/ethereumSigner";
 
 export {
   MIN_BINARY_SIZE,
@@ -21,8 +19,6 @@ export {
 
 const signers = {
   ArweaveSigner,
-  SolanaSigner,
-  EthereumSigner,
 };
 
 export { signers };
